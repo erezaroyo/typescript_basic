@@ -15,4 +15,19 @@ function getArray() {
     }
     return arr;
 }
-alert(getAverage(getArray()));
+//alert(getAverage(getArray()));
+function getAmountOfPositive(array) {
+    let count = 0;
+    array.forEach(function (value) {
+        if (value > 0) {
+            count++;
+        }
+    });
+    return count;
+}
+//alert(getAmountOfPositive(getArray()));
+function sortList(array) {
+    array.sort(function (a, b) { return a - b; });
+    return array;
+}
+//alert(sortList(getArray()));
